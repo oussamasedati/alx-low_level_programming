@@ -3,9 +3,9 @@
 #include <time.h>
 
 int main() {
-    srand(time(NULL)); // do not modify this line
+    srand(time(NULL)); 
 
-    int n = rand() - RAND_MAX/2; // do not modify this line
+    int n = rand() - RAND_MAX/2;
 
     printf("%d\n", n);
 
