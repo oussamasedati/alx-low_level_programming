@@ -3,9 +3,10 @@
 #include <time.h>
 
 int main() {
-    srand(time(NULL)); 
+    srand(time(NULL));
 
-    int n = rand() - RAND_MAX/2;
+    int n;
+    n = rand() - RAND_MAX/2;
 
     printf("%d\n", n);
 
@@ -21,4 +22,3 @@ int main() {
 
     return 0;
 }
-
