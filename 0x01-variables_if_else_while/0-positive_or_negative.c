@@ -1,9 +1,8 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
 /**
- * main - Entry point
+ * main - Entry point, assigns a random number to variable n
  *
  * Return: Always 0 (Success)
  */
@@ -11,22 +10,23 @@ int main(void)
 {
     int n;
 
-    srand(time(NULL));
+    srand(time(0));
     n = rand() - RAND_MAX / 2;
-
-    printf("%d ", n);
 
     if (n > 0)
     {
-        printf("is positive");
+        putchar(n + '0');
+        printf(" is positive\n");
     }
-    else if (n == 0)
+    else if (n < 0)
     {
-        printf("is zero");
+        putchar(n * -1 + '0');
+        printf(" is negative\n");
     }
     else
     {
-        printf("is negative");
+        putchar('0');
+        printf(" is zero\n");
     }
 
     return (0);
