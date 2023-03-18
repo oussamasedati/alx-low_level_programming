@@ -1,4 +1,9 @@
 #include <stdio.h>
+/**
+ * main - entry point
+ * Description: printing alphabets
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 char c;
