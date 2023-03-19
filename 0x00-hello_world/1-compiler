@@ -1,2 +1,7 @@
 #!/bin/bash
-gcc -c $CFILE -o ${CFILE%.c}.o
+# Get the name of the C file from $cfile
+filename=$(basename -- "$cfile")
+extension="${filename##*.}"
+filename="${filename%.*}"
+# Compile the C file into an object file
+gcc -c $cfile -o $filename.o
