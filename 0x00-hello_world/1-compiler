@@ -1,2 +1,2 @@
 #!/bin/bash
-filename=$(basename -- "$cfile"); gcc -c $cfile -o ${filename%.*}.o
+gcc -c $CFILE -o ${CFILE%.c}.o
