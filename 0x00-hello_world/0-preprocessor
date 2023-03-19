@@ -1,2 +1,4 @@
 #!/bin/bash
-cpp $CFILE > c && tail c
+export CFILE=0-main.c
+cpp $CFILE > c
+cat c
