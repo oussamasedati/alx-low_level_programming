@@ -1,2 +1,2 @@
 #!/bin/bash
-cpp "input.c" > "output.c"
+cpp $cfile > output.c
