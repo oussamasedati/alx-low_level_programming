@@ -1,25 +1,25 @@
 #include "main.h"
 /**
- * main - check the code
- *
- * Return: Always 0.
- */
+* jack_bauer - prints every minute of the day of Jack Bauer
+* starting from 00:00 to 23:59
+*/
 void jack_bauer(void)
 {
-	for (int i=0;i<3;i++)
+int i, j;
+i = 0;
+while (i < 24)
 {
-	        for (int j=0;i<10;i++)
+j = 0;
+while (j < 60)
 {
-		        for (int k=0;i<6;i++)
-{
-	                           for (int l=0;i<10;i++)
-{
-						if (i>=2 j>=4)
-{
-							
+_putchar((i / 10) + '0');
+_putchar((i % 10) + '0');
+_putchar(':');
+_putchar((j / 10) + '0');
+_putchar((j % 10) + '0');
+_putchar('\n');
+j++;
 }
-}
-}     
-}     
+i++;
 }
 }
