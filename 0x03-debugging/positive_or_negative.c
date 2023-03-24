@@ -1,7 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+<<<<<<< HEAD
 #include "main.h"
+=======
+>>>>>>> a6e81f90e5976b2e88887fbde24e7aab7de99df4
 /**
  * main - entry point
  * Description: Assigns a random number to the variable n and
